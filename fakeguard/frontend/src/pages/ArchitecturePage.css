@@ -1,0 +1,332 @@
+.architecture-page {
+  width: 100%;
+}
+
+.page-description {
+  text-align: center;
+  max-width: 600px;
+  margin: -10px auto 40px;
+  font-size: 1.05rem;
+}
+
+/* Architecture Diagram */
+.architecture-diagram {
+  margin-bottom: 50px;
+}
+
+.diagram-container {
+  background: var(--dark-card);
+  padding: 40px 20px;
+  border-radius: 15px;
+  border: 1px solid var(--border-color);
+  overflow-x: auto;
+  margin-top: 30px;
+}
+
+.diagram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  min-width: fit-content;
+  flex-wrap: wrap;
+}
+
+.arch-box {
+  background: var(--dark-bg);
+  border: 2px solid var(--secondary-color);
+  border-radius: 10px;
+  padding: 20px;
+  min-width: 140px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.arch-box .icon {
+  font-size: 2rem;
+}
+
+.arch-box .label {
+  font-weight: 600;
+  color: var(--secondary-color);
+  margin: 5px 0;
+}
+
+.arch-box small {
+  color: #888;
+  font-size: 0.8rem;
+}
+
+.arrow {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+}
+
+/* Component Cards */
+.components-section h2,
+.cloud-devops h2,
+.performance h2,
+.security h2,
+.deployment h2,
+.prototype-mvp h2 {
+  margin-bottom: 30px;
+}
+
+.component-card {
+  padding: 30px;
+}
+
+.component-card h3 {
+  margin-bottom: 20px;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tech-badge {
+  display: inline-block;
+  background: rgba(0, 212, 255, 0.15);
+  color: var(--secondary-color);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* Data Flow Steps */
+.data-flow {
+  background: rgba(0, 102, 204, 0.05);
+  padding: 40px 20px;
+  border-radius: 15px;
+  border: 1px solid rgba(0, 102, 204, 0.2);
+  margin: 40px 0;
+}
+
+.flow-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.flow-step {
+  background: var(--dark-card);
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.flow-step:hover {
+  border-color: var(--secondary-color);
+  box-shadow: 0 4px 15px rgba(0, 212, 255, 0.1);
+}
+
+.step-icon {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.flow-step h4 {
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+.flow-step p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #888;
+}
+
+/* Cloud & DevOps */
+.cloud-devops .card {
+  padding: 25px;
+}
+
+.cloud-devops h3 {
+  margin-bottom: 20px;
+  color: var(--secondary-color);
+}
+
+.cloud-devops ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cloud-devops li {
+  padding: 8px 0;
+  color: #b0b0b0;
+  font-size: 0.95rem;
+}
+
+/* Metrics */
+.performance {
+  background: rgba(0, 204, 102, 0.05);
+  padding: 40px 20px;
+  border-radius: 15px;
+  border: 1px solid rgba(0, 204, 102, 0.2);
+  margin: 40px 0;
+}
+
+.metric-box {
+  background: var(--dark-card);
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  text-align: center;
+}
+
+.metric-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+}
+
+.metric-label {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+/* Security */
+.security-card {
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.security-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.security-card h3 {
+  margin-bottom: 15px;
+}
+
+/* Deployment */
+.deployment-box {
+  padding: 0;
+  overflow: hidden;
+}
+
+.deployment-layer {
+  padding: 25px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.deployment-layer:last-child {
+  border-bottom: none;
+}
+
+.deployment-layer strong {
+  color: var(--secondary-color);
+  display: block;
+  margin-bottom: 8px;
+}
+
+.deployment-layer p {
+  margin: 0;
+  color: #b0b0b0;
+}
+
+/* Prototype vs MVP */
+.prototype-mvp {
+  background: rgba(255, 170, 0, 0.05);
+  padding: 40px 20px;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 170, 0, 0.2);
+  margin: 40px 0;
+}
+
+.comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.comparison-grid .card {
+  padding: 25px;
+}
+
+.comparison-grid h3 {
+  margin-bottom: 20px;
+  color: var(--secondary-color);
+}
+
+.comparison-grid ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.comparison-grid li {
+  padding: 8px 0;
+  color: #b0b0b0;
+  font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .diagram {
+    flex-direction: column;
+  }
+
+  .arch-box {
+    min-width: 100%;
+  }
+
+  .arrow {
+    transform: rotate(90deg);
+  }
+
+  .flow-steps {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .diagram {
+    gap: 10px;
+  }
+
+  .arch-box {
+    min-width: 120px;
+    padding: 15px 10px;
+  }
+
+  .flow-steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .metric-box {
+    padding: 20px;
+  }
+
+  .metric-value {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .flow-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .comparison-grid {
+    grid-template-columns: 1fr;
+  }
+}

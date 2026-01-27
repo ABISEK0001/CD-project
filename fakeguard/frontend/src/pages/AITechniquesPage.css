@@ -1,0 +1,349 @@
+.ai-techniques-page {
+  width: 100%;
+}
+
+.page-description {
+  text-align: center;
+  max-width: 600px;
+  margin: -10px auto 40px;
+  font-size: 1.05rem;
+}
+
+/* NLP Section */
+.nlp-section {
+  background: rgba(0, 102, 204, 0.05);
+  padding: 40px 20px;
+  border-radius: 15px;
+  border: 1px solid rgba(0, 102, 204, 0.2);
+  margin-bottom: 50px;
+}
+
+.technique-card {
+  padding: 25px;
+}
+
+.technique-card h3 {
+  margin-bottom: 12px;
+  color: var(--secondary-color);
+}
+
+.example {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 15px;
+  font-size: 0.85rem;
+  color: #b0b0b0;
+  font-family: 'Courier New', monospace;
+  border-left: 3px solid var(--secondary-color);
+}
+
+.example strong {
+  color: var(--secondary-color);
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Features Section */
+.features-section {
+  margin-bottom: 50px;
+}
+
+.features-section > p {
+  font-size: 1.05rem;
+  margin-bottom: 30px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.feature-group {
+  background: var(--dark-card);
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+}
+
+.feature-group h4 {
+  color: var(--secondary-color);
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.feature-group ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feature-group li {
+  padding: 8px 0;
+  color: #b0b0b0;
+  font-size: 0.9rem;
+  padding-left: 20px;
+  position: relative;
+}
+
+.feature-group li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--success-color);
+  font-weight: bold;
+}
+
+/* Classifiers Section */
+.classifiers-section {
+  margin-bottom: 50px;
+}
+
+.classifier-card {
+  padding: 25px;
+}
+
+.classifier-card h3 {
+  margin-bottom: 15px;
+  color: var(--secondary-color);
+}
+
+.specs {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid var(--border-color);
+}
+
+.specs span {
+  font-size: 0.85rem;
+  color: #888;
+  background: rgba(0, 212, 255, 0.1);
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: inline-block;
+  width: fit-content;
+}
+
+/* Ensemble Section */
+.ensemble-section {
+  background: rgba(0, 204, 102, 0.05);
+  padding: 40px 20px;
+  border-radius: 15px;
+  border: 1px solid rgba(0, 204, 102, 0.2);
+  margin: 40px 0;
+}
+
+.ensemble-section .card {
+  padding: 30px;
+  background: transparent;
+  border: none;
+}
+
+.voting-system {
+  background: var(--dark-card);
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  margin: 25px 0;
+}
+
+.vote {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.vote:last-child {
+  border-bottom: none;
+}
+
+.model {
+  font-weight: 600;
+  color: var(--light-text);
+}
+
+.weight {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 600;
+}
+
+.arrow-down {
+  text-align: center;
+  padding: 20px 0 0;
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+.voting-note {
+  background: rgba(0, 212, 255, 0.1);
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  border-left: 3px solid var(--secondary-color);
+}
+
+/* Sentiment Section */
+.sentiment-section {
+  margin-bottom: 50px;
+}
+
+.sentiment-example {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 12px;
+  border-left: 3px solid var(--secondary-color);
+}
+
+.sentiment-example strong {
+  color: var(--secondary-color);
+  display: block;
+  margin-bottom: 8px;
+}
+
+.sentiment-example ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sentiment-example li {
+  padding: 4px 0;
+  color: #b0b0b0;
+  font-size: 0.9rem;
+  padding-left: 15px;
+  position: relative;
+}
+
+.sentiment-example li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--warning-color);
+}
+
+/* Training Section */
+.training-section {
+  background: rgba(255, 170, 0, 0.05);
+  padding: 40px 20px;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 170, 0, 0.2);
+  margin: 40px 0;
+}
+
+.training-section .card {
+  padding: 25px;
+}
+
+.training-section h3 {
+  color: var(--secondary-color);
+  margin-bottom: 15px;
+}
+
+.training-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.training-section li {
+  padding: 8px 0;
+  color: #b0b0b0;
+  font-size: 0.95rem;
+  padding-left: 20px;
+  position: relative;
+}
+
+.training-section li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--success-color);
+  font-weight: bold;
+}
+
+/* Future Section */
+.future-section {
+  margin-bottom: 50px;
+}
+
+.improvements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.improvement-item {
+  background: var(--dark-card);
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.improvement-item:hover {
+  border-color: var(--secondary-color);
+  box-shadow: 0 4px 15px rgba(0, 212, 255, 0.1);
+}
+
+.improvement-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.improvement-item h4 {
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+}
+
+.improvement-item p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .improvements-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .voting-system {
+    padding: 20px;
+  }
+
+  .vote {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .features-grid,
+  .improvements-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .ensemble-section,
+  .training-section {
+    padding: 25px 15px;
+  }
+}
