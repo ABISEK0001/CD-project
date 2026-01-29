@@ -11,7 +11,7 @@ echo.
 
 REM Get the script directory
 set "SCRIPT_DIR=%~dp0"
-set "INDEX_FILE=%SCRIPT_DIR%index.html"
+set "INDEX_FILE=%SCRIPT_DIR%fakeguard.html"
 
 echo Opening: %INDEX_FILE%
 echo.
