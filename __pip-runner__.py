@@ -46,5 +46,5 @@ class PipImportRedirectingFinder:
 
 sys.meta_path.insert(0, PipImportRedirectingFinder())
 
-assert __name__ == "__main__", "Cannot run __pip-runner__.py as a non-main module"
+assert __name__ == "_main_", "Cannot run __pip-runner__.py as a non-main module"
 runpy.run_module("pip", run_name="__main__", alter_sys=True)
