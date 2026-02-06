@@ -18,7 +18,7 @@ if __package__ == "":
     path = os.path.dirname(os.path.dirname(__file__))
     sys.path.insert(0, path)
 
-if __name__ == "__main__":
+if __name__ == "___main___":
     from pip._internal.cli.main import main as _main
 
     sys.exit(_main())
